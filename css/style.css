@@ -1,0 +1,425 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro {
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.intro:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.promo {
+  position: relative;
+  padding-bottom: 56.25%;
+  z-index: 1;
+}
+
+.promo__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.promo__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  margin-top: 5%;
+}
+
+.promo__title h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.promo__title h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+}
+
+.promo__main {
+  display: flex;
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+
+.promo__items {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.promo__item {
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 35px;
+  line-height: 35px;
+}
+
+.promo__button {
+  font-size: 40px;
+  padding: 25px 100px;
+  border-radius: 5px;
+  color: brown;
+  border: none;
+}
+
+.ingridients {
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.ingr__item {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.ingr__item__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.ingr__items {
+  width: 10em;
+  height: 10em;
+  border: 2px solid red;
+  border-radius: 50%;
+  line-height: 10em;
+  text-align: center;
+  background: url('../img/ingridient.png') no-repeat center;
+  background-size: contain;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.22);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.ingr__items p {
+  position: absolute;
+  font-size: 40px;
+  top: -20%;
+  left: 10%;
+  color: black;
+}
+
+.ingr__button {
+  display: flex;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  padding: 25px 100px;
+  border-radius: 5px;
+  color: brown;
+  border: none;
+}
+
+.comment {
+  margin-top: 100px;
+  max-height: 100vh;
+  margin-bottom: 50px;
+} 
+
+.comment h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.comments {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments__cart {
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+  width: 225px;
+  transition: all .6s ease;
+}
+
+.cart__img {
+  overflow: hidden;
+}
+
+.cart__name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cart__desc {
+  text-align: center;
+}
+
+.slider {
+  height: 450px;
+  width: 227px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 47%;
+  transform: translateX(-50%);
+  display: flex;
+
+}
+
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #000;
+  opacity: .5;
+  border-radius: 10px;
+  transform: all .4s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+input[name='r'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 300%;
+  display: flex;
+  margin-bottom: 0;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -227px;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -454px;
+}
+
+.main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.main__description {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__content {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.main__property {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 10px;
+  max-width: 700px;
+  padding-left: 0;
+  font-size: 25px;
+}
+
+
+.main__img img {
+  max-width: 390px;
+  max-height: 382px;
+  padding-top: 10px;
+}
+
+.main__desc {
+  margin-left: 20px;
+  max-width: 350px;
+  text-align: justify;
+}
+
+
+.forma {
+  border: 2px solid #fff;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+  
+}
+
+.form__name {
+  text-align: center;
+  font-size: 50px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.timer__items {
+  display: flex;
+  text-align: center;
+  font-size: 48px;
+}
+
+.timer__item {
+  position: relative;
+  min-width: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.timer__item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -15px;
+}
+
+.form__main {
+  display: flex;
+  margin: 50px 100px;
+  text-align: center;
+}
+
+.price__img img {
+  padding-left: 30px;
+  width: 150px;
+  height: 250px;
+}
+
+.price__number {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.price__old {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration:line-through;
+}
+
+.price__new {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.form__input {
+  margin-top: 10px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input input {
+  margin-top: 5px;
+  height: 25px;
+  border: 1px solid #ddd;;
+}
+
+label {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.form__submit input {
+  font-size: 40px;
+  padding: 25px 100px;
+  border-radius: 10px;
+  color: brown;
+  border: none;
+}
+
+.form__submit input:hover {
+  cursor: pointer;
+}
+
+
+
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+
+  -webkit-appearance: none;
+}
